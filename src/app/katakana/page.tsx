@@ -7,6 +7,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowLeft } from "lucide-react"
 import Link from "next/link"
 
+
+
 const katakanaBasic = [
   { char: "ア", romaji: "a" },
   { char: "イ", romaji: "i" },
@@ -269,9 +271,8 @@ export default function KatakanaPage() {
         {characters.map((item, index) => (
           <Card
             key={index}
-            className={`cursor-pointer hover:bg-green-50 transition-all duration-200 hover:scale-105 ${
-              item.char === "" ? "invisible" : ""
-            } ${selectedChar?.char === item.char ? "bg-green-100 border-green-500" : ""}`}
+            className={`cursor-pointer hover:bg-green-50 transition-all duration-200 hover:scale-105 ${item.char === "" ? "invisible" : ""
+              } ${selectedChar?.char === item.char ? "bg-green-100 border-green-500" : ""}`}
             onClick={() => {
               if (item.char) {
                 setSelectedChar(item)
