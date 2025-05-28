@@ -20,8 +20,8 @@ export default function AboutPage() {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {/* Hiragana haqida */}
-          <Card className="shadow-lg border-0">
-            <CardHeader className="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-t-lg">
+          <Card className="shadow-lg border-0 p-0">
+            <CardHeader className="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-t-lg py-2">
               <CardTitle className="text-2xl flex items-center gap-3">
                 <span className="text-3xl">ひ</span>
                 Hiragana (ひらがな)
@@ -44,7 +44,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold">Kim ishlatgan</h3>
                     <p className="text-gray-600 text-sm">
-                      Dastlab ayollar tomonidan ishlatilgan, "ayollar yozuvi" deb atalgan
+                      {`Dastlab ayollar tomonidan ishlatilgan, "ayollar yozuvi" deb atalgan`}
                     </p>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold">Zamonaviy foydalanish</h3>
                     <p className="text-gray-600 text-sm">
-                      Yapon so'zlari, grammatik qo'shimchalar va bolalar kitoblari uchun
+                      {` Yapon so'zlari, grammatik qo'shimchalar va bolalar kitoblari uchun`}
                     </p>
                   </div>
                 </div>
@@ -62,8 +62,8 @@ export default function AboutPage() {
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-blue-800 mb-2">Qiziqarli faktlar:</h4>
                   <ul className="text-sm text-blue-700 space-y-1">
-                    <li>• "Hiragana" so'zi "oddiy" yoki "oson" degan ma'noni anglatadi</li>
-                    <li>• Eng ko'p ishlatiladigan harf "の" (no)</li>
+                    <li>• {`"Hiragana" so'zi "oddiy" yoki "oson" degan ma'noni anglatadi`}</li>
+                    <li>• {`Eng ko'p ishlatiladigan harf "の" (no)`}</li>
                     <li>• Dunyodagi eng chiroyli yozuv tizimlaridan biri hisoblanadi</li>
                   </ul>
                 </div>
@@ -72,8 +72,8 @@ export default function AboutPage() {
           </Card>
 
           {/* Katakana haqida */}
-          <Card className="shadow-lg border-0">
-            <CardHeader className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-t-lg">
+          <Card className="shadow-lg border-0 p-0">
+            <CardHeader className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-t-lg py-2">
               <CardTitle className="text-2xl flex items-center gap-3">
                 <span className="text-3xl">カ</span>
                 Katakana (カタカナ)
@@ -96,7 +96,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold">Asosiy maqsad</h3>
                     <p className="text-gray-600 text-sm">
-                      Chet el so'zlari, nom-shariflar va onomatopoetik so'zlar uchun
+                      {`Chet el so'zlari, nom-shariflar va onomatopoetik so'zlar uchun`}
                     </p>
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold">Zamonaviy ishlatilishi</h3>
                     <p className="text-gray-600 text-sm">
-                      Ingliz tilidan olingan so'zlar, kompyuter atamalar, brendlar
+                      {`Ingliz tilidan olingan so'zlar, kompyuter atamalar, brendlar`}
                     </p>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function AboutPage() {
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-green-800 mb-2">Qiziqarli faktlar:</h4>
                   <ul className="text-sm text-green-700 space-y-1">
-                    <li>• "Katakana" so'zi "qism" yoki "bo'lak" degan ma'noni anglatadi</li>
+                    <li>• {`"Katakana" so'zi "qism" yoki "bo'lak" degan ma'noni anglatadi`}</li>
                     <li>• Telegraf va telegrammalar uchun ishlatilgan</li>
                     <li>• Zamonaviy yapon tilida 20% atrofida ishlatiladi</li>
                   </ul>
@@ -127,12 +127,12 @@ export default function AboutPage() {
         {/* Umumiy ma'lumotlar */}
         <Card className="shadow-lg border-0 mb-8">
           <CardHeader>
-            <CardTitle className="text-2xl">Umumiy ma'lumotlar</CardTitle>
+            <CardTitle className="text-2xl">{`Umumiy ma'lumotlar`}</CardTitle>
           </CardHeader>
           <CardContent className="p-6">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="text-lg font-semibold mb-4">O'xshashliklar</h3>
+                <h3 className="text-lg font-semibold mb-4">{`O'xshashliklar`}</h3>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
@@ -162,15 +162,15 @@ export default function AboutPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Hiragana - yapon so'zlari, katakana - chet el so'zlari
+                    {` Hiragana - yapon so'zlari, katakana - chet el so'zlari`}
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Hiragana - grammatika, katakana - ta'kidlash
+                    {`Hiragana - grammatika, katakana - ta'kidlash`}
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Hiragana - ko'proq, katakana - kamroq ishlatiladi
+                    {`Hiragana - ko'proq, katakana - kamroq ishlatiladi`}
                   </li>
                 </ul>
               </div>
