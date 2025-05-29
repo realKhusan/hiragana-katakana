@@ -1,11 +1,11 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Info } from "lucide-react"
+import { Github, Info } from "lucide-react"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -13,16 +13,16 @@ export default function HomePage() {
             <span className="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span>
             {`Yapon tili alifbosini o'rganing`}
           </div>
-          <h1 className="text-5xl font-bold pb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className=" text-4xl md:text-5xl font-bold pb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Hiragana & Katakana
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className=" text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {`Yapon tilining asosiy yozuv tizimlarini o'rganing va interaktiv testlar orqali bilimingizni mustahkamlang`}
           </p>
         </div>
 
         {/* Main Cards */}
-        <div className="flex justify-center gap-5 mx-auto mb-16 *:cursor-pointer *:w-[350px]">
+        <div className="flex flex-col md:flex-row justify-center gap-5 mx-auto mb-16 *:cursor-pointer *:md:w-[350px]">
           <Card className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg bg-gradient-to-br from-blue-50 to-blue-100">
             <CardHeader className="text-center pb-4">
               <div className="w-16 h-16 mx-auto mb-4 bg-blue-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300">
@@ -94,6 +94,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="border-t py-2 container mx-auto opacity-50 flex items-center gap-1 px-4 ">
+        <p>createdBy:</p>
+        <a href="https://github.com/realKhusan" target="_blank" rel="noopener noreferrer" className="underline flex items-center hover:text-blue-700"><Github className="size-4" />realKhusan</a>
       </div>
     </div>
   )
